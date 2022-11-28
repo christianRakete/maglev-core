@@ -10,6 +10,9 @@ export default defineConfig({
     vue(),
     createSvgPlugin()
   ],
+  build: {
+    sourcemap: true,
+  }, 
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './app/frontend/editor')
